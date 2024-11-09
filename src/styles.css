@@ -3,3 +3,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-bg: #0D0502;
+  --color-primary: #FF4500;
+  --color-secondary: #4E4946;
+}
+
+body {
+  font-family: Inter, sans-serif;
+}
