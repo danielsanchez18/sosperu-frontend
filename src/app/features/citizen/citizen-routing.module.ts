@@ -6,6 +6,9 @@ import { CitizenComunityPageComponent } from './pages/comunity/comunity-page.com
 import { CitizenDenunciaPageComponent } from './pages/denuncia/denuncia-page.component';
 import { CitizenDenunciaMapComponent } from './pages/denuncia/map/denuncia-map.component';
 import { CitizenDenunciaAddComponent } from './pages/denuncia/add/denuncia-add.component';
+import { CitizenDenunciaPhotoComponent } from './pages/denuncia/photo/denuncia-photo.component';
+import { CitizenDenunciaAudioComponent } from './pages/denuncia/audio/denuncia-audio.component';
+import { CitizenDenunciaDetailsComponent } from './pages/denuncia/details/denuncia-details.component';
 
 const routes: Routes = [
   {
@@ -28,11 +31,23 @@ const routes: Routes = [
       },
       {
         path: "denuncias/mapa", component: CitizenDenunciaMapComponent,
-        data: { title: 'Seleccione su ubicación' }
+        data: { title: 'Seleccione su Ubicación' }
+      },
+      {
+        path: "denuncias/foto", component: CitizenDenunciaPhotoComponent,
+        data: { title: 'Capture su Denuncia' }
+      },
+      {
+        path: "denuncias/audio", component: CitizenDenunciaAudioComponent,
+        data: { title: 'Grabar Audio' }
       },
       {
         path: "denuncias/registrar", component: CitizenDenunciaAddComponent,
         data: { title: 'Enviar Anexos' }
+      },
+      {
+        path: "denuncias/1", component: CitizenDenunciaDetailsComponent,
+        data: { title: 'Detalles de Denuncia' }
       }
     ]
   }

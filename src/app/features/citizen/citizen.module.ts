@@ -9,7 +9,9 @@ import { CitizenComunityPageComponent } from './pages/comunity/comunity-page.com
 import { CitizenDenunciaPageComponent } from './pages/denuncia/denuncia-page.component';
 import { CitizenDenunciaMapComponent } from './pages/denuncia/map/denuncia-map.component';
 import { CitizenDenunciaAddComponent } from './pages/denuncia/add/denuncia-add.component';
-
+import { CitizenDenunciaPhotoComponent } from './pages/denuncia/photo/denuncia-photo.component';
+import { CitizenDenunciaAudioComponent } from './pages/denuncia/audio/denuncia-audio.component';
+import { CitizenDenunciaDetailsComponent } from './pages/denuncia/details/denuncia-details.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,15 @@ import { CitizenDenunciaAddComponent } from './pages/denuncia/add/denuncia-add.c
 
     CitizenDenunciaPageComponent,
     CitizenDenunciaMapComponent,
-    CitizenDenunciaAddComponent
+    CitizenDenunciaAddComponent,
+    CitizenDenunciaPhotoComponent,
+    CitizenDenunciaAudioComponent,
+    CitizenDenunciaDetailsComponent
   ],
   imports: [
     CommonModule,
     CitizenRoutingModule,
-    SharedModule
+    SharedModule,
   ]
 })
 export class CitizenModule { }
