@@ -1,15 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --color-bg: #0D0502;
   --color-primary: #FF4500;
+  --color-primary-light: #ff9c78;
   --color-secondary: #4E4946;
 }
 
 body {
+  background-color: var(--color-bg);
   font-family: Inter, sans-serif;
+}
+
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 0.75rem 1rem;
+  /* border-radius: 0.5rem; */
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  /* border-radius: 0.5rem; */
+}
+
+@keyframes pulse{
+  0%{
+    box-shadow: 0 0 20px #f24822
+  }
+  50%{
+    box-shadow: 0 0 40px #f24822
+  }
+  100%{
+    box-shadow: 0 0 20px #f24822
+  }
+}
+
+.alert-button{
+  transition: all .3s ease;
+}
+
+.pulse{
+  animation: pulse 3s infinite ease-in-out
 }

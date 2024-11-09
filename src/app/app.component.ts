@@ -3,6 +3,8 @@ import { Component } from '@angular/core';
 import { Router, Event, NavigationEnd } from '@angular/router';
 
 import { IStaticMethods } from 'preline/preline';
+import * as L from 'leaflet';
+
 declare global {
   interface Window {
     HSStaticMethods: IStaticMethods;
@@ -27,6 +29,10 @@ export class AppComponent {
         }, 100);
       }
     });
+
   }
+
+
+
 
 }
