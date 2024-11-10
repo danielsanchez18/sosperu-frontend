@@ -1,16 +1,19 @@
 <section class="flex flex-col items-center justify-around h-full gap-y-14">
 
-  <select data-hs-select='{
-    "toggleTag": "<button type=\"button\" aria-expanded=\"false\"></button>",
-    "toggleClasses": "hs-select-disabled:pointer-events-none hs-select-disabled:opacity-50 relative py-2 ps-4 pe-9 flex gap-x-2 text-nowrap w-full cursor-pointer bg-transparent rounded-lg text-start text-sm focus:outline-none focus:ring-0",
-    "dropdownClasses": "mt-2 z-50 w-full p-1 space-y-0.5 bg-[var(--color-bg)] rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-neutral-700 [&::-webkit-scrollbar-thumb]:bg-neutral-500",
-    "optionClasses": "py-2 px-4 w-full text-sm text-white cursor-pointer rounded-lg focus:outline-none focus:bg-secondary hs-select-disabled:pointer-events-none hs-select-disabled:opacity-50",
-    "extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2\"><svg class=\"shrink-0 size-3.5 text-white\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m6 9 6 6 6-6\"/></svg></div>"
-  }' class="hidden">
-    <option>Comunidad "Los Pinos de Cix"</option>
-    <option>Comunidad "La Victoria City"</option>
-  </select>
-  <!-- End Select -->
+  <div class="flex items-center justify-center gap-x-10">
+    <select id="communitySelect" data-hs-select='{
+      "toggleTag": "<button type=\"button\" aria-expanded=\"false\"></button>",
+      "toggleClasses": "hs-select-disabled:pointer-events-none hs-select-disabled:opacity-50 relative py-2 ps-4 pe-9 flex gap-x-2 text-nowrap w-full cursor-pointer bg-transparent rounded-lg text-start text-sm focus:outline-none focus:ring-0",
+      "dropdownClasses": "mt-2 z-50 w-full p-1 space-y-0.5 bg-[var(--color-bg)] rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-neutral-700 [&::-webkit-scrollbar-thumb]:bg-neutral-500",
+      "optionClasses": "py-2 px-4 w-full text-sm text-white cursor-pointer rounded-lg focus:outline-none focus:bg-secondary hs-select-disabled:pointer-events-none hs-select-disabled:opacity-50",
+      "extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2\"><svg class=\"shrink-0 size-3.5 text-white\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m6 9 6 6 6-6\"/></svg></div>"
+    }' class="hidden">
+      <option value="los pinos de cix">Comunidad "Los Pinos de Cix"</option>
+      <option value="la victoria">Comunidad "La Victoria City"</option>
+    </select>
+
+    <a routerLink="/ciudadano/comunidad/buscar" class="text-xs text-primary-light">Buscar</a>
+  </div>
 
 
   <button data-hs-overlay="#modal-alerta"

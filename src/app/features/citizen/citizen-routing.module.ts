@@ -14,6 +14,9 @@ import { CitizenComunityInfoComponent } from './pages/comunity/info/comunity-inf
 import { CitizenComunityPostDetailComponent } from './pages/comunity/post-detail/comunity-post-detail.component';
 import { CitizenComunityPostAddComponent } from './pages/comunity/post-add/comunity-post-add.component';
 import { CitizenComunityContactComponent } from './pages/comunity/contact/comunity-contact.component';
+import { CitizenComunitySearchComponent } from './pages/comunity/search/comunity-search.component';
+import { CitizenProfilePageComponent } from './pages/profile/profile-page.component';
+import { CitizenComunityAddComponent } from './pages/comunity/add/comunity-add.component';
 
 const routes: Routes = [
   {
@@ -33,6 +36,14 @@ const routes: Routes = [
       {
         path: 'comunidad/1/chat', component: CitizenComunityChatComponent,
         data: { title: 'Chat' }
+      },
+      {
+        path: 'comunidad/buscar', component: CitizenComunitySearchComponent,
+        data: { title: 'Buscar Comunidad' }
+      },
+      {
+        path: 'comunidad/crear', component: CitizenComunityAddComponent,
+        data: { title: 'Forma una Comunidad' }
       },
       {
         path: 'comunidad/1/contactos', component: CitizenComunityContactComponent,
@@ -73,6 +84,9 @@ const routes: Routes = [
       {
         path: "denuncias/1", component: CitizenDenunciaDetailsComponent,
         data: { title: 'Detalles de Denuncia' }
+      },
+      {
+        path: 'perfil/1', component: CitizenProfilePageComponent,
       }
     ]
   }
