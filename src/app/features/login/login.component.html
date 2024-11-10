@@ -1,12 +1,12 @@
-<div class="flex flex-col h-screen items-center justify-center">
+<div class="flex flex-col items-center justify-center h-screen">
 
   <div class="size-40">
     <img src="img/logo.svg" alt="logo">
   </div>
 
-  <div class="flex flex-col gap-y-5 items-center">
+  <div class="flex flex-col items-center gap-y-5">
 
-    <div class="text-center py-5 text-white">
+    <div class="py-5 text-center text-white">
       <h1 class="text-2xl font-bold ">Bienvenido</h1>
       <p class="text-sm">Iniciar sesión para continuar</p>
     </div>
@@ -15,12 +15,12 @@
 
       <div class="space-y-2">
         <div class="relative">
-          <input type="email"
-            class="peer py-2 px-4 pe-10 block w-full bg-white border-transparent rounded-lg text-sm focus:border-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none"
+          <input type="text"
+            class="block w-full px-4 py-2 text-sm bg-white border-transparent rounded-lg peer pe-10 focus:border-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none"
             placeholder="Ingrese su nombre">
           <div
-            class="absolute inset-y-0 px-3 end-0 flex items-center pointer-events-none ps-4 peer-disabled:opacity-50 peer-disabled:pointer-events-none">
-            <svg class="shrink-0 size-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            class="absolute inset-y-0 flex items-center px-3 pointer-events-none end-0 ps-4 peer-disabled:opacity-50 peer-disabled:pointer-events-none">
+            <svg class="text-gray-500 shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
               viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round">
               <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
@@ -32,12 +32,12 @@
         <!-- Form Group -->
           <div class="relative">
           <input id="hs-toggle-password" type="password"
-            class="py-2 ps-4 pe-10 block w-full border-white rounded-lg text-sm focus:border-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none"
+            class="block w-full py-2 text-sm border-white rounded-lg ps-4 pe-10 focus:border-primary focus:ring-primary disabled:opacity-50 disabled:pointer-events-none"
             placeholder="Ingrese su contraseña" value="12345qwerty">
           <button type="button" data-hs-toggle-password='{
           "target": "#hs-toggle-password"
         }'
-            class="absolute inset-y-0 end-0 flex items-center z-20 px-3 cursor-pointer text-gray-400 rounded-e-md focus:outline-none focus:text-primary">
+            class="absolute inset-y-0 z-20 flex items-center px-3 text-gray-400 cursor-pointer end-0 rounded-e-md focus:outline-none focus:text-primary">
             <svg class="shrink-0 size-4" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path class="hs-password-active:hidden" d="M9.88 9.88a3 3 0 1 0 4.24 4.24"></path>
@@ -52,17 +52,19 @@
           </button>
         </div>
 
-        <div class="pt-2 text-white text-xs w-full text-end">
+        <div class="w-full pt-2 text-xs text-white text-end">
           <a routerLink="/">Olvidé mi contraseña</a>
         </div>
 
       </div>
 
       <div class="space-y-2 text-sm">
-        <a routerLink="/ciudadano">
-          <button class="btn-primary w-full rounded-full">Ingresar</button>
+        <a routerLink="/ciudadano" class="flex">
+          <button class="w-full rounded-full btn-primary">Ingresar</button>
         </a>
-        <button class="btn-secondary w-full rounded-full">Registrarme</button>
+        <a routerLink="/registrar" class="flex">
+          <button class="w-full rounded-full btn-secondary">Registrarme</button>
+        </a>
       </div>
 
 
