@@ -1,7 +1,138 @@
-<section>
-  <div class="flex flex-col p-5 gap-y-2">
-    <h1>Nombre:</h1>
-    <input type="text" class="text-sm bg-transparent rounded-full"
-    placeholder="Registre el nombre de la Comunidad">
+<section class="py-5 space-y-5">
+  <div class="flex flex-col px-5 text-sm gap-y-2">
+    <h1 class="">Nombre:</h1>
+    <input type="text" class="text-sm text-white py-3 focus:ring-primary border-0 px-4 bg-[#261A18] rounded-xl"
+      placeholder="Registre el nombre de la Comunidad">
   </div>
+
+  <div class="flex flex-col px-5 text-sm gap-y-2">
+    <h1 class="">Descripcion:</h1>
+    <textarea type="text" rows="4"
+      class="text-sm text-white py-3 focus:ring-primary border-0 px-4 bg-[#261A18] rounded-xl"
+      placeholder="Registre el nombre de la Comunidad"></textarea>
+  </div>
+
+  <div class="flex flex-col px-5 text-sm border-0 gap-y-2 ring-0 focus:ring-primary">
+    <h1 class="">Departamento:</h1>
+    <select name="" id="" class="bg-[#261A18] text-sm rounded-xl">
+      <option value="">Lambayeque</option>
+      <option value="">Tumbes</option>
+      <option value="">Cuzco</option>
+      <option value="">Lima</option>
+    </select>
+  </div>
+
+  <div class="flex flex-col px-5 text-sm border-0 gap-y-2 ring-0 focus:ring-primary">
+    <h1 class="">Provincia:</h1>
+    <select name="" id="" class="bg-[#261A18] text-sm rounded-xl">
+      <option value="">Chiclayo</option>
+      <option value="">Ferreñafe</option>
+      <option value="">Lambayeque</option>
+    </select>
+  </div>
+
+  <div class="flex flex-col px-5 text-sm border-transparent gap-y-2 ring-0 focus:ring-primary">
+    <h1 class="">Distrito:</h1>
+    <select name="" id="" class="bg-[#261A18] text-sm rounded-xl">
+      <option value="">Chiclayo</option>
+      <option value="">Monsefú</option>
+      <option value="">Reque</option>
+      <option value="">Motupe</option>
+      <option value="">Eten</option>
+    </select>
+  </div>
+
+  <div class="flex flex-col px-5 text-sm gap-y-2">
+    <h1 class="">Dirección:</h1>
+    <input type="text" class="text-sm text-white py-3 focus:ring-primary border-0 px-4 bg-[#261A18] rounded-xl"
+      placeholder="Registre referencias de la dirección">
+
+    <div class="flex items-center text-gray-400 gap-x-5">
+      <hr class="w-full broder">o
+      <hr class="w-full broder">
+    </div>
+
+    <button aria-haspopup="dialog" aria-expanded="false" aria-controls="mapa-modal" data-hs-overlay="#mapa-modal"
+      class="flex items-center justify-center w-full py-4 text-sm text-primary-light">
+      Enviar ubicación actual
+    </button>
+
+    <!-- modal mapa -->
+    <div id="mapa-modal"
+      class="hs-overlay hidden size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none"
+      role="dialog" tabindex="-1" aria-labelledby="hs-scale-animation-modal-label">
+      <div
+        class="hs-overlay-animation-target hs-overlay-open:scale-100 hs-overlay-open:opacity-100 scale-95 opacity-0 ease-in-out transition-all duration-200 sm:max-w-lg sm:w-full m-3 sm:mx-auto min-h-[calc(100%-3.5rem)] flex items-center">
+        <div
+          class="flex flex-col w-full border shadow-sm pointer-events-auto rounded-xl bg-neutral-800 border-neutral-700 shadow-neutral-700/70">
+          <div class="flex items-center justify-between pt-5">
+            <h3 id="hs-scale-animation-modal-label" class="w-full text-sm text-center text-white">
+              Seleccione los puntos de área de su comunidad
+            </h3>
+
+          </div>
+          <div class="px-10 py-5 space-y-5 overflow-y-auto text-center">
+            <div id="map" class="overflow-hidden text-white border h-96 rounded-xl">
+            </div>
+          </div>
+          <div class="flex items-center justify-center px-4 py-3 pb-5 gap-x-2 ">
+            <button type="button" class="text-sm font-semibold btn-primary rounded-xl" data-hs-overlay="#mapa-modal">
+              Guardar Área
+            </button>
+            <button type="button" class="text-sm font-semibold btn-secondary rounded-xl" data-hs-overlay="#mapa-modal">
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="px-5">
+    <button aria-haspopup="dialog" aria-expanded="false" aria-controls="successfull-modal"
+      data-hs-overlay="#successfull-modal"
+      class="flex items-center justify-center w-full rounded-full btn-primary gap-x-2">
+      Crear Comunidad
+    </button>
+
+    <!-- modal successfull -->
+    <div id="successfull-modal"
+      class="hs-overlay hidden size-full fixed top-10 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none"
+      role="dialog" tabindex="-1" aria-labelledby="hs-slide-down-animation-modal-label">
+      <div
+        class="m-3 mt-0 transition-all ease-out opacity-0 hs-overlay-animation-target hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 sm:max-w-lg sm:w-full sm:mx-auto">
+        <div class="flex flex-col shadow-sm pointer-events-auto bg-secondary rounded-xl">
+          <div class="flex items-center justify-between px-4 pt-3">
+            <div class="flex items-center gap-x-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="text-blue-600 lucide lucide-check">
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+              <h3 id="hs-slide-down-animation-modal-label" class="font-medium text-white">
+                Comunidad Creada
+              </h3>
+            </div>
+            <button type="button"
+              class="inline-flex items-center justify-center text-white border border-transparent rounded-full size-8 gap-x-2 disabled:opacity-50 disabled:pointer-events-none"
+              aria-label="Close" data-hs-overlay="#successfull-modal">
+              <span class="sr-only">Close</span>
+              <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 6 6 18"></path>
+                <path d="m6 6 12 12"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="p-5 overflow-y-auto">
+            <p class="text-sm text-white">
+              Recuerda usar las comunidades para uso apropiado. Evitar publicar contenido inapropiado y faltar a las normas.
+              Las autoridades responderán antes tus solicitudes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </section>

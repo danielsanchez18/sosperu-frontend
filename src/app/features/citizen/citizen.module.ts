@@ -21,6 +21,7 @@ import { CitizenComunitySearchComponent } from './pages/comunity/search/comunity
 import { CitizenProfilePageComponent } from './pages/profile/profile-page.component';
 import { CitizenProfileEditComponent } from './pages/profile/edit/profile-edit.component';
 import { CitizenComunityAddComponent } from './pages/comunity/add/comunity-add.component';
+import { CitizenProfileNotificationsComponent } from './pages/profile/notifications/profile-notifications.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { CitizenComunityAddComponent } from './pages/comunity/add/comunity-add.c
 
     CitizenProfilePageComponent,
     CitizenProfileEditComponent,
+    CitizenProfileNotificationsComponent,
 
   ],
   imports: [

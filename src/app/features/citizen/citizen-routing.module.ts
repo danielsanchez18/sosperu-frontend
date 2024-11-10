@@ -17,6 +17,8 @@ import { CitizenComunityContactComponent } from './pages/comunity/contact/comuni
 import { CitizenComunitySearchComponent } from './pages/comunity/search/comunity-search.component';
 import { CitizenProfilePageComponent } from './pages/profile/profile-page.component';
 import { CitizenComunityAddComponent } from './pages/comunity/add/comunity-add.component';
+import { CitizenProfileNotificationsComponent } from './pages/profile/notifications/profile-notifications.component';
+import { CitizenProfileEditComponent } from './pages/profile/edit/profile-edit.component';
 
 const routes: Routes = [
   {
@@ -28,6 +30,10 @@ const routes: Routes = [
       {
         path: 'alerta', component: CitizenAlertPageComponent,
         data: { title: 'Alerta Ciudadano' }
+      },
+      {
+        path: 'notificaciones', component: CitizenProfileNotificationsComponent,
+        data: { title: 'Notificaciones' }
       },
       {
         path: 'comunidad/1', component: CitizenComunityPageComponent,
@@ -87,6 +93,11 @@ const routes: Routes = [
       },
       {
         path: 'perfil/1', component: CitizenProfilePageComponent,
+        data: { title: 'Perfil' }
+      },
+      {
+        path: 'perfil/1/editar', component: CitizenProfileEditComponent,
+        data: { title: 'Editar Perfil' }
       }
     ]
   }
