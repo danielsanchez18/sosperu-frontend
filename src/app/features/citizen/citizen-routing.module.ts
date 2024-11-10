@@ -13,6 +13,7 @@ import { CitizenComunityChatComponent } from './pages/comunity/chat/comunity-cha
 import { CitizenComunityInfoComponent } from './pages/comunity/info/comunity-info.component';
 import { CitizenComunityPostDetailComponent } from './pages/comunity/post-detail/comunity-post-detail.component';
 import { CitizenComunityPostAddComponent } from './pages/comunity/post-add/comunity-post-add.component';
+import { CitizenComunityContactComponent } from './pages/comunity/contact/comunity-contact.component';
 
 const routes: Routes = [
   {
@@ -34,11 +35,15 @@ const routes: Routes = [
         data: { title: 'Chat' }
       },
       {
+        path: 'comunidad/1/contactos', component: CitizenComunityContactComponent,
+        data: { title: 'Contactos' }
+      },
+      {
         path: 'comunidad/1/informacion', component: CitizenComunityInfoComponent,
         data: { title: 'Información' }
       },
       {
-        path: 'comunidad/1/post', component: CitizenComunityPostDetailComponent,
+        path: 'comunidad/1/post/1', component: CitizenComunityPostDetailComponent,
         data: { title: 'Publicación' }
       },
       {

@@ -1,1 +1,52 @@
-<p>comunity-post-add works!</p>
+<section class="px-5">
+
+  <form action="" class="space-y-5">
+    <div class="grid grid-cols-[auto_1fr] py-5 gap-x-5">
+      <div class="row-span-2 rounded-full bg-secondary size-10"></div>
+      <h1 class="font-semibold">Fernando Ignacio Diaz Sanchez</h1>
+      <p class="text-sm text-gray-400">05:30 am - 10 Noviembre 2024</p>
+    </div>
+
+    <div class="flex flex-col space-y-3">
+      <label for="title">Título</label>
+      <input type="text" id="title" name="title" placeholder="Agrega un título"
+      class="text-white border-0 bg-background focus:ring-0">
+    </div>
+
+    <div class="flex flex-col space-y-3">
+      <label for="content">Contenido</label>
+      <textarea rows="5" type="text" id="content" placeholder="Escribe aquí tu contenido"
+      class="text-white border-0 bg-background focus:ring-0"></textarea>
+    </div>
+
+    <div class="flex flex-col space-y-3">
+      <label for="image">Anexos</label>
+      <div data-hs-file-upload='{
+        "url": "/upload",
+        "maxFiles": 1,
+        "singleton": true
+      }'>
+        <template data-hs-file-upload-preview="">
+          <div class="flex items-center w-full">
+            <span class="overflow-hidden truncate grow-0" data-hs-file-upload-file-name=""></span>
+            <span class="grow-0">.</span>
+            <span class="grow-0" data-hs-file-upload-file-ext=""></span>
+          </div>
+        </template>
+
+        <button type="button" class="relative flex w-full overflow-hidden text-sm rounded-lg shadow-sm focus:outline-none focus:z-10 focus:border-0 disabled:opacity-50 disabled:pointer-events-none">
+          <span class="h-full px-4 py-2 text-black bg-primary-light text-nowrap">Explorar</span>
+          <span class="flex h-full px-4 py-2 overflow-hidden group grow" data-hs-file-upload-previews="">
+            <span class="group-has-[div]:hidden">Agregar archivo</span>
+          </span>
+          <span class="absolute top-0 left-0 w-full h-full" data-hs-file-upload-trigger=""></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="fixed flex justify-end w-full py-5 mx-4 end-0 bottom-20 bg-background">
+      <button type="text" class="relative text-sm font-semibold text-white border-0 rounded-full focus:ring-primary w-96 btn-primary">Publicar</button>
+    </div>
+  </form>
+
+</section>

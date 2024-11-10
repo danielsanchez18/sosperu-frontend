@@ -15,7 +15,8 @@ import { CitizenDenunciaDetailsComponent } from './pages/denuncia/details/denunc
 import { CitizenComunityInfoComponent } from './pages/comunity/info/comunity-info.component';
 import { CitizenComunityChatComponent } from './pages/comunity/chat/comunity-chat.component';
 import { CitizenComunityPostAddComponent } from './pages/comunity/post-add/comunity-post-add.component';
-import { ComunityContactComponent } from './pages/comunity/comunity-contact/comunity-contact.component';
+import { CitizenComunityContactComponent } from './pages/comunity/contact/comunity-contact.component';
+import { CitizenComunityPostDetailComponent } from './pages/comunity/post-detail/comunity-post-detail.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ComunityContactComponent } from './pages/comunity/comunity-contact/comu
     CitizenComunityInfoComponent,
     CitizenComunityChatComponent,
     CitizenComunityPostAddComponent,
-    ComunityContactComponent
+    CitizenComunityPostDetailComponent,
+    CitizenComunityContactComponent,
   ],
   imports: [
     CommonModule,
