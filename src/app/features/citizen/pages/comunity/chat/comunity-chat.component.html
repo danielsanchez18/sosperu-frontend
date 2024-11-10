@@ -1,6 +1,6 @@
-<section class="h-full space-y-5 max-h-[42rem]">
+<section class="h-full space-y-2 max-h-[38rem]">
 
-  <article class="flex items-center justify-between px-5">
+  <article class="flex items-center justify-between px-5 pb-5">
     <div class="flex items-center gap-x-3">
       <div class="bg-gray-400 rounded-full size-9">
         <img src="" alt="">
@@ -20,14 +20,34 @@
   </article>
 
 
-  <article class="rounded-2xl bg-[#261A18] min-h-full p-4">
-    <div class="flex items-center text-gray-400 gap-x-5">
-      <hr class="w-full border"> Ayer <hr class="w-full border">
+  <article class="rounded-2xl bg-[#261A18] h-full p-4 space-y-5">
+    <div class="flex items-center text-gray-500 gap-x-5">
+      <hr class="w-full border"> Ayer
+      <hr class="w-full border">
     </div>
 
-    <div>
-      sad
-    </div>
+    <!-- receiver -->
+    <section class="flex items-center justify-between ">
+      <div class="grid items-center grid-cols-[auto_1fr_auto] w-full gap-y-2 gap-x-3">
+        <div class="row-span-3 bg-gray-400 rounded-full size-10"></div>
+        <p class="text-xs">Miguel Ángel Durán - 16:08</p>
+        <p class="w-full p-2 px-4 bg-secondary rounded-2xl">Hola, ¿Como están?</p>
+        <button class="col-start-3 row-start-1 text-white ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-heart">
+            <path
+              d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+          </svg>
+        </button>
+      </div>
+
+    </section>
   </article>
 
+  <article class="flex items-center gap-x-5">
+    <input type="text" class="bg-[#261A18] border-none w-full text-white text-sm rounded-full py-3 px-4"
+      placeholder="Enviar mensaje">
+    <button class="text-sm text-primary-light">Enviar</button>
+  </article>
 </section>

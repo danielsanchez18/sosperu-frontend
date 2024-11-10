@@ -25,26 +25,57 @@
     class="hs-overlay hs-overlay-open:translate-x-0 hidden -translate-x-full fixed top-0 start-0 transition-all duration-300 transform h-full max-w-xs w-full z-[80] border-e bg-neutral-800 border-neutral-700"
     role="dialog" tabindex="-1" aria-labelledby="hs-offcanvas-example-label">
 
-    <div class="flex items-center justify-between px-4 py-3 border-b border-neutral-700">
+    <div class="flex items-center justify-between px-6 py-3 border-b border-neutral-700">
       <h3 id="hs-offcanvas-example-label" class="font-bold text-white">
         Menú
       </h3>
       <button type="button"
-        class="inline-flex items-center justify-center border border-transparent rounded-full size-8 gap-x-2 hover:bg-gray-200 focus:outline-nonedisabled:opacity-50 disabled:pointer-events-none bg-neutral-700 dark:hover:bg-neutral-600 text-neutral-400 focus:bg-neutral-600"
+        class="inline-flex items-center justify-center border border-transparent rounded-full size-8 gap-x-2 text-primary-light focus:outline-nonedisabled:opacity-50 disabled:pointer-events-none"
         aria-label="Close" data-hs-overlay="#hs-offcanvas-sidebar">
         <span class="sr-only">Close</span>
-        <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+        <svg class="shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
           fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M18 6 6 18"></path>
           <path d="m6 6 12 12"></path>
         </svg>
       </button>
     </div>
-    <div class="p-4">
-      <p class="text-gray-800 dark:text-neutral-400">
-        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists,
-        etc.
-      </p>
+    <div class="p-4 space-y-2">
+      <a routerLink="/ciudadano/comunidad/buscar" data-hs-overlay="#hs-offcanvas-sidebar"
+        class="flex items-center px-6 py-3 text-sm text-white rounded-full bg-secondary gap-x-3 focus:bg-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-search">
+          <circle cx="11" cy="11" r="8" />
+          <path d="m21 21-4.3-4.3" />
+        </svg>
+        Buscar comunidades</a>
+
+
+      <a routerLink="/ciudadano/comunidad/normas" data-hs-overlay="#hs-offcanvas-sidebar"
+        class="flex items-center px-6 py-3 text-sm text-white rounded-full bg-secondary gap-x-3 focus:bg-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-list-checks">
+          <path d="m3 17 2 2 4-4" />
+          <path d="m3 7 2 2 4-4" />
+          <path d="M13 6h8" />
+          <path d="M13 12h8" />
+          <path d="M13 18h8" />
+        </svg>
+        Normas</a>
+
+
+      <a routerLink="/" data-hs-overlay="#hs-offcanvas-sidebar"
+        class="flex items-center px-6 py-3 text-sm text-white rounded-full bg-secondary gap-x-3 focus:bg-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-log-out">
+          <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+          <polyline points="16 17 21 12 16 7" />
+          <line x1="21" x2="9" y1="12" y2="12" />
+        </svg>
+        Cerrar Sesión</a>
     </div>
   </div>
 
