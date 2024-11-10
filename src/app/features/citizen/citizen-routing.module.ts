@@ -19,6 +19,7 @@ import { CitizenProfilePageComponent } from './pages/profile/profile-page.compon
 import { CitizenComunityAddComponent } from './pages/comunity/add/comunity-add.component';
 import { CitizenProfileNotificationsComponent } from './pages/profile/notifications/profile-notifications.component';
 import { CitizenProfileEditComponent } from './pages/profile/edit/profile-edit.component';
+import { CitizenNormasPageComponent } from './pages/normas/normas-page.component';
 
 const routes: Routes = [
   {
@@ -38,6 +39,10 @@ const routes: Routes = [
       {
         path: 'comunidad/1', component: CitizenComunityPageComponent,
         data: { title: 'Los Pinos de Chiclayo' }
+      },
+      {
+        path: 'reglas', component: CitizenNormasPageComponent,
+        data: { title: 'Normas de Uso' }
       },
       {
         path: 'comunidad/1/chat', component: CitizenComunityChatComponent,

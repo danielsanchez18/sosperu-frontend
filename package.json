@@ -19,6 +19,7 @@
     "@angular/platform-browser-dynamic": "^18.0.0",
     "@angular/router": "^18.0.0",
     "@popperjs/core": "^2.11.8",
+    "@preline/accordion": "^2.5.0",
     "@preline/dropdown": "^2.5.0",
     "@preline/file-upload": "^2.5.0",
     "@preline/overlay": "^2.5.0",

@@ -22,6 +22,7 @@ import { CitizenProfilePageComponent } from './pages/profile/profile-page.compon
 import { CitizenProfileEditComponent } from './pages/profile/edit/profile-edit.component';
 import { CitizenComunityAddComponent } from './pages/comunity/add/comunity-add.component';
 import { CitizenProfileNotificationsComponent } from './pages/profile/notifications/profile-notifications.component';
+import { CitizenNormasPageComponent } from './pages/normas/normas-page.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { CitizenProfileNotificationsComponent } from './pages/profile/notificati
     CitizenProfilePageComponent,
     CitizenProfileEditComponent,
     CitizenProfileNotificationsComponent,
+    CitizenNormasPageComponent,
 
   ],
   imports: [
