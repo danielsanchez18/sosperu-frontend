@@ -1,11 +1,26 @@
+<style>
+  .no-scrollbar {
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+</style>
+
+
 <!-- Seccion de Informacion de la comunidad -->
 
+<article class="pb-10 space-y-5 border-b border-b-gray-500">
+  <div class="flex items-center justify-between">
+    <h1 class="font-semibold">Informacion</h1>
+    <a routerLink="/ciudadano/comunidad/1/informacion" class="text-sm text-primary-light">Ver más</a>
+  </div>
 
-<article class="py-10 space-y-5 border-b border-b-gray-500">
-  <h1 class="font-semibold">Informacion de la Comunidad</h1>
-
-  <a routerLink="/comunidad/usuario/1"
-  class="p-4 focus:bg-primary focus:text-white rounded-xl gap-x-4 bg-secondary text-sm grid grid-cols-[auto_1fr] items-center">
+  <a routerLink="/ciudadano/comunidad/usuario/1"
+    class="p-4 focus:bg-primary focus:text-white rounded-xl gap-x-4 bg-secondary text-sm grid grid-cols-[auto_1fr] items-center">
     <div class="row-span-2 bg-gray-300 rounded-full size-10"></div>
     <p>Fernado Ignacio Diaz Sanchez</p>
     <p class="text-xs font-semibold text-gray-300 uppercase">Jefe de Comunidad</p>
@@ -20,7 +35,7 @@
 
   <h1 class="font-semibold">Recordatorios</h1>
 
-  <div class="flex overflow-y-auto gap-x-3">
+  <div class="flex overflow-y-auto gap-x-3 no-scrollbar">
 
     <section class="w-full h-full px-4 py-3 space-y-2 rounded-lg min-w-60 max-h-56 bg-secondary">
       <div class="space-y-2">
@@ -154,21 +169,21 @@
 </article>
 
 
-<section class="flex justify-end w-full">
+<section class="fixed flex justify-end w-full bottom-24 right-10">
 
-  <div class="hs-dropdown relative [--placement:bottom-left] inline-flex">
+  <div class="hs-dropdown relative [--placement:top-left] inline-flex">
     <button id="hs-dropup" aria-label="Dropdown" area-expanded="false"
       class="p-2 text-sm text-white rounded-full hs-dropdown-toggle bg-primary">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-        class="lucide lucide-plus size-6">
+        class="lucide lucide-plus size-8">
         <path d="M5 12h14" />
         <path d="M12 5v14" />
       </svg>
     </button>
 
     <div
-      class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 shadow-md rounded-lg mt-2 bg-neutral-800"
+      class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 shadow-md rounded-lg mt-2 bg-secondary"
       role="menu" aria-orientation="vertical" aria-labelledby="hs-dropup">
       <div class="p-1 space-y-0.5">
         <a class="flex items-center px-3 py-2 text-sm rounded-lg gap-x-3 focus:outline-none text-neutral-300 hover:bg-neutral-700 hover:text-neutral-300 focus:bg-neutral-700"
@@ -187,15 +202,10 @@
           href="#">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="lucide lucide-clipboard-list size-4 text-primary-light">
-            <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
-            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-            <path d="M12 11h4" />
-            <path d="M12 16h4" />
-            <path d="M8 11h.01" />
-            <path d="M8 16h.01" />
+            class="lucide lucide-message-circle text-primary-light size-4">
+            <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
           </svg>
-          Realizar denuncia
+          Chat de Comunidad
         </a>
       </div>
     </div>

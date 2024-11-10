@@ -9,6 +9,10 @@ import { CitizenDenunciaAddComponent } from './pages/denuncia/add/denuncia-add.c
 import { CitizenDenunciaPhotoComponent } from './pages/denuncia/photo/denuncia-photo.component';
 import { CitizenDenunciaAudioComponent } from './pages/denuncia/audio/denuncia-audio.component';
 import { CitizenDenunciaDetailsComponent } from './pages/denuncia/details/denuncia-details.component';
+import { CitizenComunityChatComponent } from './pages/comunity/chat/comunity-chat.component';
+import { CitizenComunityInfoComponent } from './pages/comunity/info/comunity-info.component';
+import { CitizenComunityPostDetailComponent } from './pages/comunity/post-detail/comunity-post-detail.component';
+import { CitizenComunityPostAddComponent } from './pages/comunity/post-add/comunity-post-add.component';
 
 const routes: Routes = [
   {
@@ -23,7 +27,23 @@ const routes: Routes = [
       },
       {
         path: 'comunidad/1', component: CitizenComunityPageComponent,
-        data: { title: 'Mi Comunidad' }
+        data: { title: 'Los Pinos de Chiclayo' }
+      },
+      {
+        path: 'comunidad/1/chat', component: CitizenComunityChatComponent,
+        data: { title: 'Chat' }
+      },
+      {
+        path: 'comunidad/1/informacion', component: CitizenComunityInfoComponent,
+        data: { title: 'Información' }
+      },
+      {
+        path: 'comunidad/1/post', component: CitizenComunityPostDetailComponent,
+        data: { title: 'Publicación' }
+      },
+      {
+        path: 'comunidad/1/post/generar', component: CitizenComunityPostAddComponent,
+        data: { title: 'Publicar' }
       },
       {
         path: "denuncias", component: CitizenDenunciaPageComponent,

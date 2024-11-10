@@ -38,13 +38,13 @@ input {
 
 @keyframes pulse{
   0%{
-    box-shadow: 0 0 20px #f24822
+    box-shadow: 0 0 30px #f24822
   }
   50%{
-    box-shadow: 0 0 40px #f24822
+    box-shadow: 0 0 80px #f24822
   }
   100%{
-    box-shadow: 0 0 20px #f24822
+    box-shadow: 0 0 30px #f24822
   }
 }
 

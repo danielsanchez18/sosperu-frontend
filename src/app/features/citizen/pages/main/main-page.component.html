@@ -1,8 +1,22 @@
+<style>
+  .no-scrollbar {
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+</style>
+
+
+
 <div class="flex flex-col justify-between w-full h-screen max-w-sm max-h-screen justify-self-center">
 
   <shared-navbar></shared-navbar>
 
-  <div class="h-full overflow-y-auto">
+  <div class="h-full overflow-y-auto no-scrollbar">
     <router-outlet></router-outlet>
   </div>
 

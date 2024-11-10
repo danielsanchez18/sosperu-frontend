@@ -12,6 +12,10 @@ import { CitizenDenunciaAddComponent } from './pages/denuncia/add/denuncia-add.c
 import { CitizenDenunciaPhotoComponent } from './pages/denuncia/photo/denuncia-photo.component';
 import { CitizenDenunciaAudioComponent } from './pages/denuncia/audio/denuncia-audio.component';
 import { CitizenDenunciaDetailsComponent } from './pages/denuncia/details/denuncia-details.component';
+import { CitizenComunityInfoComponent } from './pages/comunity/info/comunity-info.component';
+import { CitizenComunityChatComponent } from './pages/comunity/chat/comunity-chat.component';
+import { CitizenComunityPostAddComponent } from './pages/comunity/post-add/comunity-post-add.component';
+import { ComunityContactComponent } from './pages/comunity/comunity-contact/comunity-contact.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { CitizenDenunciaDetailsComponent } from './pages/denuncia/details/denunc
     CitizenDenunciaAddComponent,
     CitizenDenunciaPhotoComponent,
     CitizenDenunciaAudioComponent,
-    CitizenDenunciaDetailsComponent
+    CitizenDenunciaDetailsComponent,
+    CitizenComunityInfoComponent,
+    CitizenComunityChatComponent,
+    CitizenComunityPostAddComponent,
+    ComunityContactComponent
   ],
   imports: [
     CommonModule,
