@@ -23,6 +23,16 @@ import { CitizenProfileEditComponent } from './pages/profile/edit/profile-edit.c
 import { CitizenComunityAddComponent } from './pages/comunity/add/comunity-add.component';
 import { CitizenProfileNotificationsComponent } from './pages/profile/notifications/profile-notifications.component';
 import { CitizenNormasPageComponent } from './pages/normas/normas-page.component';
+import { CitizenComunityFeedComponent } from './pages/comunity/feed/comunity-feed.component';
+import { CitizenComunityAlertsComponent } from './pages/comunity/alerts/comunity-alerts.component';
+import { CitizenComunityAlertsDetailComponent } from './pages/comunity/alerts-detail/comunity-alerts-detail.component';
+import { CitizenComunityDenunciasComponent } from './pages/comunity/denuncias/comunity-denuncias.component';
+import { CitizenComunityRecordatoriosComponent } from './pages/comunity/recordatorios/comunity-recordatorios.component';
+import { CitizenComunityPostComponent } from './pages/comunity/post/comunity-post.component';
+import { CitizenComunityRecordatoriosDetailComponent } from './pages/comunity/recordatorios-detail/comunity-recordatorios-detail.component';
+import { CitizenProfileNotificationsTodasComponent } from './pages/profile/notifications-todas/profile-notifications-todas.component';
+import { CitizenProfileNotificationsComunidadComponent } from './pages/profile/notifications-comunidad/profile-notifications-comunidad.component';
+import { CitizenProfileNotificationsAlertasComponent } from './pages/profile/notifications-alertas/profile-notifications-alertas.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +49,7 @@ import { CitizenNormasPageComponent } from './pages/normas/normas-page.component
     CitizenDenunciaAudioComponent,
     CitizenDenunciaDetailsComponent,
 
+    CitizenComunityFeedComponent,
     CitizenComunityInfoComponent,
     CitizenComunityChatComponent,
     CitizenComunityPostAddComponent,
@@ -51,6 +62,17 @@ import { CitizenNormasPageComponent } from './pages/normas/normas-page.component
     CitizenProfileEditComponent,
     CitizenProfileNotificationsComponent,
     CitizenNormasPageComponent,
+
+    CitizenComunityAlertsComponent,
+    CitizenComunityAlertsDetailComponent,
+    CitizenComunityDenunciasComponent,
+    CitizenComunityRecordatoriosComponent,
+    CitizenComunityPostComponent,
+    CitizenComunityRecordatoriosDetailComponent,
+
+    CitizenProfileNotificationsTodasComponent,
+    CitizenProfileNotificationsComunidadComponent,
+    CitizenProfileNotificationsAlertasComponent,
 
   ],
   imports: [

@@ -1,107 +1,42 @@
-<div class="py-5 space-y-10 ">
+<style>
+  .links {
+    padding: 0.5rem 1rem;
+    color: #9ca3af;
+    border-radius: 9999px;
+    background-color: #261A18;
+    text-wrap: nowrap;
+    order: 2;
+    width: fit-content;
+  }
 
-  <section class="flex items-center px-5 overflow-y-auto gap-x-3">
-    <button class="px-4 py-2 text-sm border-0 rounded-full tex-twhite bg-primary">
-      Todas
-    </button>
-    <button class="px-4 py-2 text-sm border-0 rounded-full tex-twhite bg-secondary">
-      Comunidad
-    </button>
-    <button class="px-4 py-2 text-sm border-0 rounded-full tex-twhite bg-secondary">
-      Alertas
-    </button>
+  .active {
+    color: white;
+    background-color: var(--color-primary);
+    order: 1;
+  }
+
+  .no-scrollbar {
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+</style>
+
+
+
+<div class="">
+  <section class="grid items-center grid-flow-col p-5 overflow-x-auto text-sm w-fit gap-x-2 no-scrollbar">
+
+    <a routerLink="/ciudadano/notificaciones/todas" routerLinkActive="active"class="links">Todas</a>
+    <a routerLink="/ciudadano/notificaciones/comunidad" routerLinkActive="active" class="links">Comunidad</a>
+    <a routerLink="/ciudadano/notificaciones/alertas" routerLinkActive="active" class="links">Alertas</a>
   </section>
 
-  <section class="">
-    <a routerLink="../denuncias/1" class="grid grid-cols-[auto_1fr] px-5 border focus:border-primary border-transparent rounded-xl py-4 gap-x-5 gap-y-2">
-      <div class="row-span-2 bg-gray-300 rounded-full size-14">
-        <img src="" alt="">
-      </div>
-      <div class="flex items-center justify-between text-sm gap-x-2">
-        <p class="font-semibold truncate">Miguel Ángel Duran</p>
-        <p class="text-gray-400">02:51 PM</p>
-      </div>
-      <p class="text-sm text-white truncate">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui quisquam ut dolorum, dicta, amet consequuntur vel porro iste laborum modi voluptatum? Reiciendis molestias fugiat facilis necessitatibus non? Iusto, est itaque.</p>
-    </a>
-
-    <a routerLink="../denuncias/1" class="grid grid-cols-[auto_1fr] px-5 border focus:border-primary border-transparent rounded-xl py-4 gap-x-5 gap-y-2">
-      <div class="row-span-2 bg-gray-300 rounded-full size-14">
-        <img src="" alt="">
-      </div>
-      <div class="flex items-center justify-between text-sm gap-x-2">
-        <p class="font-semibold truncate">Miguel Ángel Duran</p>
-        <p class="text-gray-400">02:51 PM</p>
-      </div>
-      <p class="text-sm text-white truncate">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui quisquam ut dolorum, dicta, amet consequuntur vel porro iste laborum modi voluptatum? Reiciendis molestias fugiat facilis necessitatibus non? Iusto, est itaque.</p>
-    </a>
-
-    <a routerLink="../denuncias/1" class="grid grid-cols-[auto_1fr] px-5 border focus:border-primary border-transparent rounded-xl py-4 gap-x-5 gap-y-2">
-      <div class="row-span-2 bg-gray-300 rounded-full size-14">
-        <img src="" alt="">
-      </div>
-      <div class="flex items-center justify-between text-sm gap-x-2">
-        <p class="font-semibold truncate">Miguel Ángel Duran</p>
-        <p class="text-gray-400">02:51 PM</p>
-      </div>
-      <p class="text-sm text-white truncate">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui quisquam ut dolorum, dicta, amet consequuntur vel porro iste laborum modi voluptatum? Reiciendis molestias fugiat facilis necessitatibus non? Iusto, est itaque.</p>
-    </a>
-
-    <a routerLink="../denuncias/1" class="grid grid-cols-[auto_1fr] px-5 border focus:border-primary border-transparent rounded-xl py-4 gap-x-5 gap-y-2">
-      <div class="row-span-2 bg-gray-300 rounded-full size-14">
-        <img src="" alt="">
-      </div>
-      <div class="flex items-center justify-between text-sm gap-x-2">
-        <p class="font-semibold truncate">Miguel Ángel Duran</p>
-        <p class="text-gray-400">02:51 PM</p>
-      </div>
-      <p class="text-sm text-white truncate">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui quisquam ut dolorum, dicta, amet consequuntur vel porro iste laborum modi voluptatum? Reiciendis molestias fugiat facilis necessitatibus non? Iusto, est itaque.</p>
-    </a>
-
-
-    <a routerLink="../denuncias/1" class="grid grid-cols-[auto_1fr] px-5 border focus:border-primary border-transparent rounded-xl py-4 gap-x-5 gap-y-2">
-      <div class="row-span-2 bg-gray-300 rounded-full size-14">
-        <img src="" alt="">
-      </div>
-      <div class="flex items-center justify-between text-sm gap-x-2">
-        <p class="font-semibold truncate">Miguel Ángel Duran</p>
-        <p class="text-gray-400">02:51 PM</p>
-      </div>
-      <p class="text-sm text-white truncate">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui quisquam ut dolorum, dicta, amet consequuntur vel porro iste laborum modi voluptatum? Reiciendis molestias fugiat facilis necessitatibus non? Iusto, est itaque.</p>
-    </a>
-
-    <a routerLink="../denuncias/1" class="grid grid-cols-[auto_1fr] px-5 border focus:border-primary border-transparent rounded-xl py-4 gap-x-5 gap-y-2">
-      <div class="row-span-2 bg-gray-300 rounded-full size-14">
-        <img src="" alt="">
-      </div>
-      <div class="flex items-center justify-between text-sm gap-x-2">
-        <p class="font-semibold truncate">Miguel Ángel Duran</p>
-        <p class="text-gray-400">02:51 PM</p>
-      </div>
-      <p class="text-sm text-white truncate">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui quisquam ut dolorum, dicta, amet consequuntur vel porro iste laborum modi voluptatum? Reiciendis molestias fugiat facilis necessitatibus non? Iusto, est itaque.</p>
-    </a>
-
-    <a routerLink="../denuncias/1" class="grid grid-cols-[auto_1fr] px-5 border focus:border-primary border-transparent rounded-xl py-4 gap-x-5 gap-y-2">
-      <div class="row-span-2 bg-gray-300 rounded-full size-14">
-        <img src="" alt="">
-      </div>
-      <div class="flex items-center justify-between text-sm gap-x-2">
-        <p class="font-semibold truncate">Miguel Ángel Duran</p>
-        <p class="text-gray-400">02:51 PM</p>
-      </div>
-      <p class="text-sm text-white truncate">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui quisquam ut dolorum, dicta, amet consequuntur vel porro iste laborum modi voluptatum? Reiciendis molestias fugiat facilis necessitatibus non? Iusto, est itaque.</p>
-    </a>
-
-    <a routerLink="../denuncias/1" class="grid grid-cols-[auto_1fr] px-5 border focus:border-primary border-transparent rounded-xl py-4 gap-x-5 gap-y-2">
-      <div class="row-span-2 bg-gray-300 rounded-full size-14">
-        <img src="" alt="">
-      </div>
-      <div class="flex items-center justify-between text-sm gap-x-2">
-        <p class="font-semibold truncate">Miguel Ángel Duran</p>
-        <p class="text-gray-400">02:51 PM</p>
-      </div>
-      <p class="text-sm text-white truncate">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui quisquam ut dolorum, dicta, amet consequuntur vel porro iste laborum modi voluptatum? Reiciendis molestias fugiat facilis necessitatibus non? Iusto, est itaque.</p>
-    </a>
-
+  <section>
+    <router-outlet></router-outlet>
   </section>
-
 </div>

@@ -20,6 +20,16 @@ import { CitizenComunityAddComponent } from './pages/comunity/add/comunity-add.c
 import { CitizenProfileNotificationsComponent } from './pages/profile/notifications/profile-notifications.component';
 import { CitizenProfileEditComponent } from './pages/profile/edit/profile-edit.component';
 import { CitizenNormasPageComponent } from './pages/normas/normas-page.component';
+import { CitizenComunityFeedComponent } from './pages/comunity/feed/comunity-feed.component';
+import { CitizenComunityAlertsComponent } from './pages/comunity/alerts/comunity-alerts.component';
+import { CitizenComunityAlertsDetailComponent } from './pages/comunity/alerts-detail/comunity-alerts-detail.component';
+import { CitizenComunityDenunciasComponent } from './pages/comunity/denuncias/comunity-denuncias.component';
+import { CitizenComunityRecordatoriosComponent } from './pages/comunity/recordatorios/comunity-recordatorios.component';
+import { CitizenComunityPostComponent } from './pages/comunity/post/comunity-post.component';
+import { CitizenComunityRecordatoriosDetailComponent } from './pages/comunity/recordatorios-detail/comunity-recordatorios-detail.component';
+import { CitizenProfileNotificationsTodasComponent } from './pages/profile/notifications-todas/profile-notifications-todas.component';
+import { CitizenProfileNotificationsAlertasComponent } from './pages/profile/notifications-alertas/profile-notifications-alertas.component';
+import { CitizenProfileNotificationsComunidadComponent } from './pages/profile/notifications-comunidad/profile-notifications-comunidad.component';
 
 const routes: Routes = [
   {
@@ -34,11 +44,58 @@ const routes: Routes = [
       },
       {
         path: 'notificaciones', component: CitizenProfileNotificationsComponent,
-        data: { title: 'Notificaciones' }
+        data: { title: 'Notificaciones' },
+        children: [
+          {
+            path: '', redirectTo: "todas", pathMatch: 'full'
+          },
+          {
+            path: 'todas', component: CitizenProfileNotificationsTodasComponent
+          },
+          {
+            path: 'comunidad', component: CitizenProfileNotificationsComunidadComponent
+          },
+          {
+            path: 'alertas', component: CitizenProfileNotificationsAlertasComponent
+          }
+        ]
       },
       {
         path: 'comunidad/1', component: CitizenComunityPageComponent,
-        data: { title: 'Los Pinos de Chiclayo' }
+        data: { title: 'Los Pinos de Chiclayo' },
+        children: [
+          {
+            path: '', redirectTo: "feed", pathMatch: 'full'
+          },
+          {
+            path: 'feed', component: CitizenComunityFeedComponent,
+            data: { title: 'Feed' },
+          },
+          {
+            path: 'alertas', component: CitizenComunityAlertsComponent,
+            data: { title: 'Alertas' },
+          },
+          {
+            path: 'denuncias', component: CitizenComunityDenunciasComponent,
+            data: { title: 'Denuncias' },
+          },
+          {
+            path: 'recordatorios', component: CitizenComunityRecordatoriosComponent,
+            data: { title: 'Recordatorios' },
+          },
+          {
+            path: 'publicaciones', component: CitizenComunityPostComponent,
+            data: { title: 'Publicaciones' },
+          }
+        ]
+      },
+      {
+        path: 'comunidad/1/alertas/1', component: CitizenComunityAlertsDetailComponent,
+        data: { title: 'Detalles de Alerta' }
+      },
+      {
+        path: 'comunidad/1/recordatorios/1', component: CitizenComunityRecordatoriosDetailComponent,
+        data: { title: 'Detalles de Recordatorio' }
       },
       {
         path: 'reglas', component: CitizenNormasPageComponent,
@@ -93,7 +150,7 @@ const routes: Routes = [
         data: { title: 'Enviar Anexos' }
       },
       {
-        path: "denuncias/1", component: CitizenDenunciaDetailsComponent,
+        path: "comunidad/1/denuncias/1", component: CitizenDenunciaDetailsComponent,
         data: { title: 'Detalles de Denuncia' }
       },
       {

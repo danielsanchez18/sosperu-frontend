@@ -1,0 +1,71 @@
+<style>
+  /* START LOADER CSS */
+  .loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid;
+    border-color: #FF3D00 transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* END LOADER CSS */
+</style>
+
+
+
+<section class="p-5 space-y-10">
+
+  <div class="space-y-3">
+    <h1 class="text-lg font-semibold text-primary-light">Reunión Semanal de Comunidad</h1>
+    <p>Programada para el día 11 de noviembre a las 11:57 AM</p>
+    <p>Tema: Establecer Normas de Comunidad</p>
+  </div>
+
+  <div class="space-y-5">
+    <p class="text-sm font-semibold">Programada por:</p>
+    <a routerLink="/ciudadano/perfil/1"
+      class="p-4 focus:bg-primary focus:text-white rounded-xl gap-x-4 bg-[#261A18] text-sm grid grid-cols-[auto_1fr] items-center">
+      <div class="row-span-2 bg-gray-300 rounded-full size-10">
+        <img class="object-cover h-full rounded-full"
+          src="https://yt3.googleusercontent.com/wpc2B6nslz9DW_pd-KZjlQ26Ds9DLVom3yeMFy87sIZcfZGe7AXVqlZUvP-ePshI7VXvqiDRpWQ=s900-c-k-c0x00ffffff-no-rj"
+          alt="">
+      </div>
+      <p>Miguel Ángel Durán</p>
+      <p class="text-xs font-semibold text-gray-300 uppercase">Jefe de Comunidad</p>
+    </a>
+  </div>
+
+  <div class="flex items-center gap-x-5">
+    <button class="flex items-center justify-center w-full text-sm font-semibold btn-primary rounded-xl gap-x-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="lucide lucide-check size-5">
+        <path d="M20 6 9 17l-5-5" />
+      </svg>
+      Asistiré
+    </button>
+
+    <button class="flex items-center justify-center w-full text-sm font-semibold btn-secondary rounded-xl gap-x-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x size-5">
+        <path d="M18 6 6 18" />
+        <path d="m6 6 12 12" />
+      </svg>
+      No asistiré
+    </button>
+  </div>
+
+</section>

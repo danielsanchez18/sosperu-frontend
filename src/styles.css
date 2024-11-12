@@ -36,22 +36,35 @@ input {
   /* border-radius: 0.5rem; */
 }
 
-@keyframes pulse{
-  0%{
+@keyframes pulse {
+  0% {
     box-shadow: 0 0 30px #f24822
   }
-  50%{
+
+  50% {
     box-shadow: 0 0 80px #f24822
   }
-  100%{
+
+  100% {
     box-shadow: 0 0 30px #f24822
   }
 }
 
-.alert-button{
+.alert-button {
   transition: all .3s ease;
 }
 
-.pulse{
+.pulse {
   animation: pulse 3s infinite ease-in-out
+}
+
+
+.no-scrollbar {
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
