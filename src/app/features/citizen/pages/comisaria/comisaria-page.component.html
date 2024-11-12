@@ -1,0 +1,121 @@
+<style>
+  /* START LOADER CSS */
+  .loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid;
+    border-color: #FF3D00 transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* END LOADER CSS */
+</style>
+
+
+<div class="flex flex-col gap-6 px-4 py-4">
+
+  <div class="flex items-center gap-3">
+    <input type="text" placeholder="Buscar comisarías..."
+      class="bg-[#261A18] text-white border-none outline-none rounded-full focus:ring-primary px-5 flex-1 ">
+
+  </div>
+
+  <div>
+    <div class="h-[30rem] overflow-hidden rounded-xl">
+
+      <div *ngIf="locationLoaded == false" class="flex flex-col items-center justify-center h-full gap-5">
+        <span class="loader"></span>
+        <small>Cargando mapa...</small>
+      </div>
+
+      <div *ngIf="locationLoaded" id="map" class="h-full overflow-hidden text-white border rounded-xl">
+      </div>
+
+    </div>
+  </div>
+
+  <h1 class="pt-5 text-sm font-medium">Comisaría cercanas a un radio de 500 metros</h1>
+
+  <div class="flex gap-5 overflow-x-auto no-scrollbar">
+
+    <div class="border min-w-[280px] border-gray-800 p-3 rounded-md relative flex flex-col h-[245px] gap-3">
+      <div class="absolute top-3 end-3">
+        <a routerLink="1" class="mt-0.5 text-sm text-primary-light">Ver</a>
+      </div>
+
+
+      <div>
+        <p class="pb-1 font-bold text-white">Comisaría La Victoria</p>
+        <p class="text-xs text-gray-400">La Victoria 325 - Chiclayo.</p>
+      </div>
+
+      <div class="flex grid-comunities h-[245px] overflow-hidden">
+
+        <div class="grid-item large">
+          <img src="https://photos.zillowstatic.com/fp/5cc214c3d9b645d731a3c9c6356dd062-cc_ft_960.jpg" alt=""
+            class="block object-cover w-full h-full">
+        </div>
+
+        <div class="grid-item small">
+          <img src="https://na.rdcpix.com/12ef6d3a5d7a680c8e3cb89c0539b46aw-c3252920933srd_q80.jpg" alt=""
+            class="block object-cover w-full h-full">
+        </div>
+
+        <div class="grid-item small">
+          <img
+            src="https://media.istockphoto.com/id/157382018/photo/suburban-street.jpg?s=612x612&w=0&k=20&c=bwPnWy93wzcQZ1W0wD6zKZ7JrNRMgyccTB0OxULjyWs="
+            alt="" class="block object-cover w-full h-full">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="border min-w-[280px] border-gray-800 p-3 rounded-md relative flex flex-col h-[245px] gap-3">
+
+      <div class="absolute top-3 end-3">
+        <a routerLink="1" class="mt-0.5 text-sm text-primary-light">Ver</a>
+      </div>
+
+      <div>
+        <p class="pb-1 font-bold text-white truncate pr-7">Caseta de Seguridad "Los Pinos"</p>
+        <p class="text-xs text-gray-400">Entrada de la residencial "Los Pinos".</p>
+      </div>
+
+      <div class="flex grid-comunities h-[245px] overflow-hidden">
+
+        <div class="grid-item large">
+          <img src="https://photos.zillowstatic.com/fp/5cc214c3d9b645d731a3c9c6356dd062-cc_ft_960.jpg" alt=""
+            class="block object-cover w-full h-full">
+        </div>
+
+        <div class="grid-item small">
+          <img src="https://na.rdcpix.com/12ef6d3a5d7a680c8e3cb89c0539b46aw-c3252920933srd_q80.jpg" alt=""
+            class="block object-cover w-full h-full">
+        </div>
+
+        <div class="grid-item small">
+          <img
+            src="https://media.istockphoto.com/id/157382018/photo/suburban-street.jpg?s=612x612&w=0&k=20&c=bwPnWy93wzcQZ1W0wD6zKZ7JrNRMgyccTB0OxULjyWs="
+            alt="" class="block object-cover w-full h-full">
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+</div>

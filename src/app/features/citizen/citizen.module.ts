@@ -33,6 +33,8 @@ import { CitizenComunityRecordatoriosDetailComponent } from './pages/comunity/re
 import { CitizenProfileNotificationsTodasComponent } from './pages/profile/notifications-todas/profile-notifications-todas.component';
 import { CitizenProfileNotificationsComunidadComponent } from './pages/profile/notifications-comunidad/profile-notifications-comunidad.component';
 import { CitizenProfileNotificationsAlertasComponent } from './pages/profile/notifications-alertas/profile-notifications-alertas.component';
+import { CitizenComisariaPageComponent } from './pages/comisaria/comisaria-page.component';
+import { CitizenComisariaDetailComponent } from './pages/comisaria/comisaria-detail/comisaria-detail.component';
 
 @NgModule({
   declarations: [
@@ -73,6 +75,8 @@ import { CitizenProfileNotificationsAlertasComponent } from './pages/profile/not
     CitizenProfileNotificationsTodasComponent,
     CitizenProfileNotificationsComunidadComponent,
     CitizenProfileNotificationsAlertasComponent,
+    CitizenComisariaPageComponent,
+    CitizenComisariaDetailComponent,
 
   ],
   imports: [

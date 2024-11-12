@@ -30,6 +30,8 @@ import { CitizenComunityRecordatoriosDetailComponent } from './pages/comunity/re
 import { CitizenProfileNotificationsTodasComponent } from './pages/profile/notifications-todas/profile-notifications-todas.component';
 import { CitizenProfileNotificationsAlertasComponent } from './pages/profile/notifications-alertas/profile-notifications-alertas.component';
 import { CitizenProfileNotificationsComunidadComponent } from './pages/profile/notifications-comunidad/profile-notifications-comunidad.component';
+import { CitizenComisariaPageComponent } from './pages/comisaria/comisaria-page.component';
+import { CitizenComisariaDetailComponent } from './pages/comisaria/comisaria-detail/comisaria-detail.component';
 
 const routes: Routes = [
   {
@@ -50,15 +52,26 @@ const routes: Routes = [
             path: '', redirectTo: "todas", pathMatch: 'full'
           },
           {
-            path: 'todas', component: CitizenProfileNotificationsTodasComponent
+            path: 'todas', component: CitizenProfileNotificationsTodasComponent,
+            data: { title: 'Notificaciones' },
           },
           {
-            path: 'comunidad', component: CitizenProfileNotificationsComunidadComponent
+            path: 'comunidad', component: CitizenProfileNotificationsComunidadComponent,
+            data: { title: 'Notificaciones' },
           },
           {
-            path: 'alertas', component: CitizenProfileNotificationsAlertasComponent
+            path: 'alertas', component: CitizenProfileNotificationsAlertasComponent,
+            data: { title: 'Notificaciones' },
           }
         ]
+      },
+      {
+        path: 'comisarias', component: CitizenComisariaPageComponent,
+        data: { title: 'Comisarías Cercanas' }
+      },
+      {
+        path: 'comisarias/1', component: CitizenComisariaDetailComponent,
+        data: { title: 'Detalles de Comisaría' }
       },
       {
         path: 'comunidad/1', component: CitizenComunityPageComponent,
